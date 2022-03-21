@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>practice</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="counter">
+  <div class="main-counter">
+    <h1>products counter</h1>
+    <div class="counter-tetails">
+      <div class="product-img-price">
+        
+      
+      <img src="a.png" alt="products-images">
+      <div>
+        <h4>Price : <span class="price">299</span> Tk</h4>
+        <h4>quantity : <span class="quantity">1</span></h4>
+        <h4>Total price : <span class="total">299</span> Tk</h4>
+      </div>
+    </div>
+    <div class="counter-btn">
+      
+    
+    <button class="btn" onclick="productCount(false)" type="text">-</button>
+    <input class="input" id="input" type="number" value="1">
+    <button class="btn" onclick="productCount(true)" type="text">+</button>
+    </div>
+    <br />
+    <button class="btn order-btn" id="order"  type="submit">Order now</button>
+    
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  
+  
+  function productCount(product){
+   const inputValue = document.getElementById('input').value;
+    const newInputValue = parseInt(inputValue);
+    let total = newInputValue;
+    if(product == true){
+      total = newInputValue +1
+    }
+    if(product==false && newInputValue > 1){
+      total= newInputValue -1;
+    }
+    document.querySelector('#input').value=total;
+    document.querySelector('.quantity').innerText=total;
+    
+  } 
+  
+  const orderNow = document.querySelector('#order');
+  orderNow.addEventListener('click',function(){
+    const inputValue = document.querySelector('.quantity').innerText = document.querySelector('#input').value;
+    let newInputValue = parseInt(inputValue);
+    
+    
+     totalPrice = newInputValue * 299;
+    document.querySelector('.total').innerHTML= totalPrice;
+    
+    
+  })
+  
+  
+  
+</script>
+
+</body>
+
+</html>

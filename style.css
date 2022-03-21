@@ -1,0 +1,82 @@
+*{
+  background:#000 ;
+  color: #fff;
+  font-family: "Poppinse" sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.counter{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counter-tetails img{
+  width: 150px;
+  padding-right: 10px;
+}
+.main-counter h1{
+  padding: 20px 0;
+  text-align: center;
+}
+.counter-tetails{
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+}
+.product-img-price{
+  display: flex;
+  align-items: center;
+  
+}
+.product-img-price h4{
+  font-size: 13px;
+  padding: 4px 0;
+}
+.counter-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  background-color: #fff;
+}
+.btn{
+  width: 50px;
+  font-size: 20px;
+  border: 1px solid #fff;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 3px 10px gray;
+}
+.input{
+  width: 180px;
+  border: 1px solid #fff;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 5px 3px 10px gray;
+}
+.order-btn{
+  width: 100%;
+  font-weight: 700;
+}
+ .input:hover{
+  background-color: #E3B506;
+  box-shadow: 5px 5px 10px gray;
+  border: 3px;
+}
+.btn:hover{
+  background-color: #E3B506;
+  box-shadow: 5px 5px 10px gray;
+  border: 3px;
+}
+.quantity{
+  color: #F7FF00;
+}
+.total{
+  color: #F7FF00;
+}
